@@ -13,7 +13,7 @@ $pink: rgb(249, 82, 110);
   padding: 0.5rem 1rem;
   font-size: large;
   box-shadow: -1px -1px 2px;
-  
+
   svg {
     font-size: 2rem;
     color: $gray;
@@ -41,7 +41,7 @@ $pink: rgb(249, 82, 110);
 .icon-styling {
   display: flex;
   align-items: center;
-  
+
   span {
     margin-left: 1rem;
     color: #000;
@@ -150,6 +150,15 @@ $pink: rgb(249, 82, 110);
 .dollar-styling-two {
   background: $pink;
 }
+.dollar-styling-two svg:hover {
+  transition: transform 0.3s;
+  transform: translateY(-5px);
+}
+
+.dollar-styling svg:hover {
+  transition: transform 0.3s;
+  transform: translateY(-5px);
+}
 
 .main-card h3 {
   text-align: center;
@@ -174,6 +183,10 @@ $pink: rgb(249, 82, 110);
 
   svg {
     color: $gray;
+    transition: transform 0.3s;
+  }
+  svg:hover {
+    transform: translateY(-5px);
   }
 
   .wallet svg {
