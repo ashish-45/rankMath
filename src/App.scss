@@ -1,0 +1,214 @@
+$gray: gray;
+$red: #f44336;
+$green: green;
+$orange: orange;
+$blue: #2045fa;
+$pink: rgb(249, 82, 110);
+
+.main-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: large;
+  box-shadow: -1px -1px 2px;
+  
+  svg {
+    font-size: 2rem;
+    color: $gray;
+  }
+
+  p {
+    font-size: larger;
+    font-weight: bold;
+  }
+}
+
+.main-card {
+  margin: 1.5rem 2.5rem;
+  padding: 1rem 1rem;
+  box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-styling {
+  display: flex;
+  align-items: center;
+  
+  span {
+    margin-left: 1rem;
+    color: #000;
+    font-weight: 600;
+  }
+}
+
+.bitcoin-value p {
+  font-weight: bold;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+.bitcoin-usd-Value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .usd-value {
+    color: $gray;
+    font-weight: 600;
+  }
+
+  .negative-value {
+    display: inline-block;
+    padding: 0.1rem 0.5rem;
+    border-radius: 1rem;
+    background-color: $red;
+    color: white;
+    height: 30px;
+    font-weight: 600;
+
+    p {
+      margin: 4px;
+    }
+  }
+}
+
+.dropdown-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $gray;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.with-dot,
+.with-dot-right,
+.with-dot-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $gray;
+  font-weight: 500;
+
+  span {
+    font-weight: 600;
+    margin-left: 5px;
+  }
+
+  &::before {
+    content: ".";
+    margin-right: 0.2em;
+    font-size: 5rem;
+    margin-top: -3.5rem;
+  }
+}
+
+.with-dot::before {
+  color: $red;
+}
+
+.with-dot-right::before {
+  color: $green;
+}
+
+.with-dot-bottom {
+  margin-left: 3rem;
+  color: #000;
+  display: flex;
+  justify-content: left !important;
+}
+
+.with-dot-bottom::before {
+  color: $orange;
+}
+
+.dollar-styling,
+.dollar-styling-two {
+  height: 60px;
+  width: 60px;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+.dollar-styling {
+  background: $blue;
+}
+
+.dollar-styling-two {
+  background: $pink;
+}
+
+.main-card h3 {
+  text-align: center;
+}
+
+.bitcoin-card {
+  display: flex;
+  justify-content: space-between;
+
+  .main-card {
+    width: 50%;
+  }
+}
+
+.footer-card {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  box-shadow: 0px 0px 2px;
+  margin-bottom: 1rem;
+
+  svg {
+    color: $gray;
+  }
+
+  .wallet svg {
+    color: #000;
+  }
+}
+
+.tab-section {
+  display: flex;
+  justify-content: space-between;
+  color: $gray;
+  font-weight: 600;
+
+  .week-area {
+    background-color: #969696;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+  }
+}
+
+.tab-card {
+  margin: 0.5rem 1.5rem;
+  border-radius: 10px;
+  padding: 0rem 1rem;
+}
+
+.togglecard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $gray;
+  font-size: 1.2rem;
+
+  .remove-icon {
+    color: $red;
+  }
+}
